@@ -19,8 +19,21 @@ export class TileView {
 
             const tile = document.createElement('div');
             tile.classList.add('tile');
-            tile.textContent = todo.todo;
+
+            const deleteButtonId = "delete-" + todo.id;
+
+            let tileHtml = "<p class='is-size-6'>";
+            tileHtml += todo.todo;
+            tileHtml += "<button id='" + deleteButtonId + "' class='is-medium delete ml-2'>";
+            tileHtml += "Delete"
+            tileHtml += "</button>"
+            tileHtml += "</p>";
+
+            tile.innerHTML = tileHtml;
             tileContainer.appendChild(tile);
+
+            const deleteButton = document.getElementById(deleteButtonId);
+            deleteButton.onclick = () => this.deleteItem(todo.id);
         });
     }
 
