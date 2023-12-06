@@ -1,0 +1,12 @@
+.tile-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tile {
+  flex: 0 0 30%;
+  margin: 10px;
+  background-color: #eaeaea;
+  padding: 20px;
+  box-sizing: border-box;
+}

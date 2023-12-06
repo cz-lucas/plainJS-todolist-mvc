@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <title>Todo List</title>
+</head>
+
+<body>
+  <div id="app" class="p-1">
+    <h1 id="heading" class=" m-3 is-size-1">
+      Todo List
+    </h1>
+    <div id="tableViewContainer">
+      <table id="todoTable" class="table is-striped is-bordered is-hoverable is-fullwidth m-3">
+        <thead>
+          <tr>
+            <th>Todo</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+      </table>
+      <div id="tableViewContainerAddItem" class="m-3">
+        <input id="tableViewContainerAddItemInput" type="text" class="input" placeholder="your todo..."/>
+        <button id="tableViewContainerAddItemAdd" class="button is-primary mt-2">Add todo</button>
+      </div>
+    </div>
+    <hr>
+    <div id="tileViewContainer">
+      <div class="tile-container" id="tileContainer">
+        <!-- Tiles will be added in while execution -->
+      </div>
+      <div id="tileViewContainerAddItem" class="m-3">
+        <input id="tileViewContainerAddItemInput" type="text" class="input" placeholder="your todo..."/>
+        <button id="tileViewContainerAddItemAdd" class="button is-link mt-2">Add todo</button>
+      </div>
+    </div>
+  </div>
+  <div id="viewChange m-3 p-3">
+    <button id="changeViewButton" class="button is-info m-3"> Show tile view</button>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
