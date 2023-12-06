@@ -84,6 +84,4 @@ todoTileView.setController(c);
 
 showView("tableView");
 
-c.addItem("Hallo");
-c.addItem("Welt!");
 todoTileView.update();
